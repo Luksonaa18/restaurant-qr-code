@@ -1,4 +1,10 @@
 import { Category } from "../types/menuitems";
+// kalmaxi
+// dorado
+// sibasi
+// barabuli
+// soko sulgunit
+// bostneuli dafaze
 
 export const menu: Category[] = [
   {
@@ -168,7 +174,7 @@ export const menu: Category[] = [
         image: "",
       },
       {
-        id: "absolut",
+        id: "absolute",
         nameKey: "აბსოლუტი",
         descriptionKey: "ვოდკა",
         price: 0,
@@ -400,6 +406,13 @@ export const menu: Category[] = [
         price: 44,
         image: "",
       },
+      {
+        id: "greek-salad",
+        nameKey: "ბერძნული სალათა",
+        descriptionKey: "კლასიკური სალათა",
+        price: 44,
+        image: "",
+      },
     ],
     image: "/salad.jpg",
   },
@@ -455,6 +468,12 @@ export const menu: Category[] = [
       { id: "ribs-ajika", nameKey: "ნეკნი აჯიკაში", price: 115, image: "" },
       { id: "family-chicken", nameKey: "ოჯახური ქათმის", price: 20, image: "" },
       { id: "sausage-desk", nameKey: "სოსისების დაფა", price: 20, image: "" },
+      {
+        id: "fish-desk",
+        nameKey: "ზღვის პროდუქტების დაფა",
+        price: 190,
+        image: "",
+      },
       {
         id: "liver-withsauce",
         nameKey: "ღვიძლი საფანის სოუსით",
