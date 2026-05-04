@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import Image from "next/image";
+import icon from "@/app/favicon.ico";
 
 const Intro = () => {
   const overlayRef = useRef<HTMLDivElement>(null);
@@ -114,7 +115,7 @@ const Intro = () => {
         ref={logoRef}
         width={120}
         height={120}
-        src="/logo.jpeg"
+        src={icon}
         alt="logo"
         className="rounded-full ring-2 ring-[#C9A84C]/30 shadow-[0_0_40px_rgba(201,168,76,0.15)]"
         style={{ opacity: 0 }}
