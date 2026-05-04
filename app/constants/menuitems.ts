@@ -8,7 +8,7 @@ export const menu: Category[] = [
       {
         id: "raspberry-lemonade",
         nameKey: "მალინის ლიმონათი",
-        descriptionKey: "სახლის ლიმონათი მალინით და ლიმონით",
+        descriptionKey: "სახლის ლიმონათი მალინით",
         image: "/drinks/raspberry.jpg",
         price: 5,
       },
@@ -28,7 +28,7 @@ export const menu: Category[] = [
       {
         id: "watermelon-lemonade",
         nameKey: "საზამთროს ლიმონათი",
-        descriptionKey: "ახალი საზამთროს ლიმონათი ლიმონით",
+        descriptionKey: "ახალი საზამთროს ლიმონათი",
         image: "/drinks/watermelon.jpg",
         price: 6,
       },
