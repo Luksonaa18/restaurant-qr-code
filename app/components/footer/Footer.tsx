@@ -1,5 +1,5 @@
 "use client";
-import { useTranslation } from "@/app/translator";
+import { useTranslation } from "@/app/locales/translator";
 import { useCartStore } from "@/zustand";
 import { useRouter } from "next/navigation";
 

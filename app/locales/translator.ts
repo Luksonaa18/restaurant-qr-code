@@ -1,7 +1,7 @@
 "use client";
 
 import { useLangStore } from "@/zustand";
-import { ItemKey, CategoryKey } from "./locales/translations";
+import { ItemKey, CategoryKey } from "./translations";
 import { getCategoryTranslation, getTranslation, getUITranslation } from "./ts";
 
 type UIKey = "clear-cart" | "product" | "total" | "cart" | "empty-cart";

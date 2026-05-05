@@ -56,7 +56,7 @@ const Intro = () => {
 
       .to({}, { duration: 0.8 })
 
-      // exit
+      
       .to(logoRef.current, {
         scale: 1.4,
         opacity: 0,
@@ -96,7 +96,7 @@ const Intro = () => {
   return (
     <div
       ref={overlayRef}
-      className="fixed inset-0 z-[9999] flex flex-col items-center justify-center gap-4"
+      className="fixed inset-0 z-9999 flex flex-col items-center justify-center gap-4"
     style={{
    backgroundColor:"black"
 }}
@@ -125,7 +125,7 @@ const Intro = () => {
         <div className="flex items-center gap-2 mt-2 w-48">
           <div
             ref={line1Ref}
-            className="flex-1 h-px bg-gradient-to-r from-transparent to-[#C9A84C]"
+            className="flex-1 h-px bg-linear-to-r from-transparent to-[#C9A84C]"
             style={{ transformOrigin: "right" }}
           />
           <div ref={dotsRef} className="text-[#C9A84C] text-xs">
@@ -133,7 +133,7 @@ const Intro = () => {
           </div>
           <div
             ref={line2Ref}
-            className="flex-1 h-px bg-gradient-to-l from-transparent to-[#C9A84C]"
+            className="flex-1 h-px bg-linear-to-l from-transparent to-[#C9A84C]"
             style={{ transformOrigin: "left" }}
           />
         </div>

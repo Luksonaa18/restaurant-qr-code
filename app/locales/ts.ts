@@ -3,7 +3,7 @@ import {
   translations,
   CategoryKey,
   Lang,
-} from "./locales/translations";
+} from "./translations";
 
 const DEFAULT_LANG: Lang = "en";
 

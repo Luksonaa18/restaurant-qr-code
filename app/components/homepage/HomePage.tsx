@@ -3,7 +3,7 @@
 import { menu } from "@/app/constants/menuitems";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import { useTranslation } from "@/app/translator";
+import { useTranslation } from "@/app/locales/translator";
 import { CategoryKey } from "@/app/locales/translations";
 import Image from "next/image";
 

@@ -6,7 +6,7 @@ import { menu } from "@/app/constants/menuitems";
 import { useCartStore } from "@/zustand";
 
 import { useParams } from "next/navigation";
-import { useTranslation } from "@/app/translator";
+import { useTranslation } from "@/app/locales/translator";
 import { ItemKey } from "@/app/locales/translations";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -30,7 +30,7 @@ const CategoryPage = () => {
     <div className="min-h-screen bg-black">
       <Header />
 
-      {/* GRID WRAPPER */}
+      
       <div className="p-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
         {category.items.map((item, index) => (
           <motion.div
@@ -42,16 +42,16 @@ const CategoryPage = () => {
             whileTap={{ scale: 0.98 }}
             className="bg-black border border-[#C9A84C]/20 hover:border-[#C9A84C]/50 transition-colors rounded-2xl shadow-[0_2px_12px_rgba(0,0,0,0.4)] p-3 flex flex-col gap-3"
           >
-            {/* IMAGE */}
+            
             <Image
-              src={item.image || "/placeholder.png"}
+              src={item.image}
               width={400}
               height={250}
               alt={item.id}
-              className="rounded-lg w-full h-[160px] object-cover"
+              className="rounded-lg w-full h-40 object-cover"
             />
 
-            {/* TEXT CONTENT */}
+            
             <div className="flex flex-col gap-1">
               <h2 className="font-semibold text-base text-white tracking-wide">
                 {tItem(item.id as ItemKey)}
@@ -68,7 +68,7 @@ const CategoryPage = () => {
               </p>
             </div>
 
-            {/* BUTTON */}
+            
             <motion.button
               whileTap={{ scale: 0.9 }}
               onClick={() =>

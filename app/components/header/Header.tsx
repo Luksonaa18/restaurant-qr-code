@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useCartStore, useLangStore } from "@/zustand";
-import { useTranslation } from "@/app/translator";
+import { useTranslation } from "@/app/locales/translator";
 import { ItemKey } from "@/app/locales/translations";
 import Image, { StaticImageData } from "next/image";
 
@@ -114,7 +114,7 @@ const Header = () => {
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: -10, scale: 0.95 }}
                     transition={{ duration: 0.2 }}
-                    className="absolute right-0 mt-2 bg-black border border-[#C9A84C]/30 rounded-lg overflow-hidden z-50 min-w-[120px]"
+                    className="absolute right-0 mt-2 bg-black border border-[#C9A84C]/30 rounded-lg overflow-hidden z-50 min-w-30"
                   >
                     {languages.map((l) => (
                       <div
@@ -155,7 +155,7 @@ const Header = () => {
               />
 
               {totalCount > 0 && (
-                <span className="absolute -top-2 -right-2 bg-gradient-to-b from-[#E8C97A] to-[#B8860B] text-[#120C06] text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full">
+                <span className="absolute -top-2 -right-2 bg-linear-to-b from-[#E8C97A] to-[#B8860B] text-[#120C06] text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full">
                   {totalCount}
                 </span>
               )}
@@ -171,11 +171,11 @@ const Header = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed top-0 inset-0 bg-black z-[9990] flex flex-col"
+            className="fixed top-0 inset-0 bg-black z-9990 flex flex-col"
           >
             {/* HEADER */}
             <div className="px-6 h-16 flex justify-between items-center border-b border-[#C9A84C]/20">
-              <span className="tracking-widest bg-gradient-to-b from-[#E8C97A] via-[#C9A84C] to-[#7A5C00] bg-clip-text text-transparent font-bold text-lg">
+              <span className="tracking-widest bg-linear-to-b from-[#E8C97A] via-[#C9A84C] to-[#7A5C00] bg-clip-text text-transparent font-bold text-lg">
                 {tUI("cart")}
               </span>
 
@@ -241,7 +241,7 @@ const Header = () => {
 
               <div className="font-semibold text-[#E8C97A] tracking-wider">
                 {tUI("total")}:{" "}
-                <span className="bg-gradient-to-b from-[#E8C97A] to-[#B8860B] bg-clip-text text-transparent">
+                <span className="bg-linear-to-b from-[#E8C97A] to-[#B8860B] bg-clip-text text-transparent">
                   {totalPrice}₾
                 </span>
               </div>
