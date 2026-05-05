@@ -1,5 +1,7 @@
 import { create } from "zustand";
-import { persist } from "zustand/middleware";
+import { persist, createJSONStorage } from "zustand/middleware";
+
+
 
 type CartItem = {
   id: string;
@@ -20,7 +22,7 @@ type CartStore = {
 
 export const useCartStore = create<CartStore>()(
   persist(
-    (set) => ({
+    (set, get) => ({
       items: [],
 
       addToCart: (item) =>
@@ -30,7 +32,9 @@ export const useCartStore = create<CartStore>()(
           if (existing) {
             return {
               items: state.items.map((i) =>
-                i.id === item.id ? { ...i, quantity: i.quantity + 1 } : i,
+                i.id === item.id
+                  ? { ...i, quantity: i.quantity + 1 }
+                  : i
               ),
             };
           }
@@ -48,14 +52,16 @@ export const useCartStore = create<CartStore>()(
       increase: (id) =>
         set((state) => ({
           items: state.items.map((i) =>
-            i.id === id ? { ...i, quantity: i.quantity + 1 } : i,
+            i.id === id ? { ...i, quantity: i.quantity + 1 } : i
           ),
         })),
 
       decrease: (id) =>
         set((state) => ({
           items: state.items
-            .map((i) => (i.id === id ? { ...i, quantity: i.quantity - 1 } : i))
+            .map((i) =>
+              i.id === id ? { ...i, quantity: i.quantity - 1 } : i
+            )
             .filter((i) => i.quantity > 0),
         })),
 
@@ -63,17 +69,21 @@ export const useCartStore = create<CartStore>()(
     }),
     {
       name: "restaurant-cart",
-    },
-  ),
+      storage: createJSONStorage(() => localStorage),
+    }
+  )
 );
+
+
+
 type Lang = "en" | "ru" | "tr" | "ge";
 
-type State = {
+type LangStore = {
   lang: Lang;
   setLang: (lang: Lang) => void;
 };
 
-export const useLangStore = create<State>()(
+export const useLangStore = create<LangStore>()(
   persist(
     (set) => ({
       lang: "en",
@@ -81,6 +91,7 @@ export const useLangStore = create<State>()(
     }),
     {
       name: "lang-storage",
-    },
-  ),
+      storage: createJSONStorage(() => localStorage),
+    }
+  )
 );

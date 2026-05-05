@@ -1,9 +1,4 @@
-import {
-  ItemKey,
-  translations,
-  CategoryKey,
-  Lang,
-} from "./translations";
+import { ItemKey, translations, CategoryKey, Lang } from "./translations";
 
 const DEFAULT_LANG: Lang = "en";
 
@@ -16,10 +11,9 @@ export function getTranslation(lang: Lang, key: ItemKey): string {
 }
 
 export const getUITranslation = (lang: Lang, key: string) => {
-  return (
-    translations[lang].ui?.[key as keyof (typeof translations)[Lang]["ui"]] ||
-    key
-  );
+  const dictionary = translations[lang] ?? translations[DEFAULT_LANG];
+
+  return dictionary?.ui?.[key as keyof typeof dictionary.ui] ?? key;
 };
 
 export function getCategoryTranslation(lang: Lang, key: CategoryKey): string {
