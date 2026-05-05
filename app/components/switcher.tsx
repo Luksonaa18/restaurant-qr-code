@@ -2,7 +2,7 @@
 
 import { useLangStore } from "@/zustand";
 
-const languages = ["en", "ru", "tr", "ka"] as const;
+const languages = ["en", "ru", "tr", "ge"] as const;
 
 export const LanguageSwitcher = () => {
   const lang = useLangStore((s) => s.lang);
