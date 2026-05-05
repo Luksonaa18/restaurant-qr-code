@@ -16,15 +16,16 @@ const CategoryPage = () => {
   const addToCart = useCartStore((s) => s.addToCart);
   const { tItem } = useTranslation();
 
-  const category = menu.find((c) => c.id === params.id);
+  const id = Array.isArray(params?.id) ? params.id[0] : params?.id;
 
-  if (!category) {
-    return (
-      <div className="min-h-screen bg-black flex items-center justify-center text-white tracking-widest">
-        Not found
-      </div>
-    );
-  }
+const category = menu.find((c) => String(c.id) === id);
+if (!category || !category.items) {
+  return (
+    <div className="min-h-screen bg-black flex items-center justify-center text-white tracking-widest">
+      Not found
+    </div>
+  );
+}
 
   return (
     <div className="min-h-screen bg-black">
@@ -43,13 +44,15 @@ const CategoryPage = () => {
             className="bg-black border border-[#C9A84C]/20 hover:border-[#C9A84C]/50 transition-colors rounded-2xl shadow-[0_2px_12px_rgba(0,0,0,0.4)] p-3 flex flex-col gap-3"
           >
             
-            <Image
+          {item.image !== null && 
+           <Image
               src={item.image}
               width={400}
               height={250}
               alt={item.id}
               className="rounded-lg w-full h-40 object-cover"
             />
+          }
 
             
             <div className="flex flex-col gap-1">
