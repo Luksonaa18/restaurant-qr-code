@@ -9,7 +9,6 @@ const Intro = () => {
   const overlayRef = useRef<HTMLDivElement>(null);
   const logoRef = useRef<HTMLImageElement>(null);
   const welcomeRef = useRef<HTMLSpanElement>(null);
-  
   const line1Ref = useRef<HTMLDivElement>(null);
   const line2Ref = useRef<HTMLDivElement>(null);
   const dotsRef = useRef<HTMLDivElement>(null);
@@ -28,8 +27,8 @@ const Intro = () => {
 
     tl.fromTo(
       logoRef.current,
-      { x: "-100vw", rotation: -360, opacity: 0 },
-      { x: 0, rotation: 0, opacity: 1, duration: 1, ease: "power3.out" },
+      { y: "-100vw", opacity: 0 },
+      { y: 0, rotation: 0, opacity: 1, duration: 1, ease: "power3.out" },
     )
 
       .fromTo(
@@ -114,8 +113,8 @@ const Intro = () => {
 
       <Image
         ref={logoRef}
-        width={180}
-        height={180}
+        width={230}
+        height={230}
         src={icon}
         alt="logo"
         className="rounded-full mt-5 ring-2 ring-[#C9A84C]/30 shadow-[0_0_40px_rgba(201,168,76,0.15)]"

@@ -16,7 +16,7 @@ import turkey from "@/public/Flag_of_Turkey.svg";
 import russia from "@/public/russia.webp";
 
 
-type Lang = "en" | "ka" | "tr" | "ru";
+type Lang = "en" | "ge" | "tr" | "ru";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -66,7 +66,7 @@ const Header = () => {
     flag: StaticImageData;
   }[] = [
     { code: "en", label: "EN", flag: usa },
-    { code: "ka", label: "KA", flag: georgia },
+    { code: "ge", label: "GE", flag: georgia },
     { code: "tr", label: "TR", flag: turkey },
     { code: "ru", label: "RU", flag: russia },
   ];
@@ -83,7 +83,7 @@ const Header = () => {
           
           <h1
             onClick={() => router.push("/")}
-            className="text-xl font-bold cursor-pointer tracking-widest bg-gradient-to-b from-[#E8C97A] via-[#C9A84C] to-[#7A5C00] bg-clip-text text-transparent"
+            className="text-xl font-bold cursor-pointer text-white tracking-widest"
           >
             MARINA
           </h1>

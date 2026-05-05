@@ -66,7 +66,7 @@ export const useCartStore = create<CartStore>()(
     },
   ),
 );
-type Lang = "en" | "ru" | "tr" | "ka";
+type Lang = "en" | "ru" | "tr" | "ge";
 
 type State = {
   lang: Lang;

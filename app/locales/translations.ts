@@ -1,4 +1,4 @@
-export type Lang = "en" | "ru" | "tr" | "ka";
+export type Lang = "en" | "ru" | "tr" | "ge";
 export type CategoryKey =
   | "drinks"
   | "sauces"
@@ -529,7 +529,7 @@ export const translations: Record<Lang, TranslationSchema> = {
     },
   },
 
-  ka: {
+  ge: {
     categories: {
       drinks: "სასმელები",
       sauces: "სოუსები",
