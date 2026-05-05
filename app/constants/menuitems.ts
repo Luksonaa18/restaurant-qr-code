@@ -511,7 +511,7 @@ export const menu: Category[] = [
         id: "chicken-wings",
         nameKey: "ქათმის ფრთები",
         price: 30,
-        image: "/wings.jpg",
+        image: "/asda.webp",
       },
       {
         id: "smoked-lamb",
@@ -525,7 +525,12 @@ export const menu: Category[] = [
         price: 28,
         image: "/ხბოჯახური.png",
       },
-      { id: "salkhino", nameKey: "სალხინო", price: 42, image: "" },
+      {
+        id: "salkhino",
+        nameKey: "სალხინო",
+        price: 42,
+        image: "",
+      },
       {
         id: "chabaka-chick",
         nameKey: "ჭაბაკა წიწილა",

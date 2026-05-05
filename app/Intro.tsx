@@ -98,9 +98,9 @@ const Intro = () => {
     <div
       ref={overlayRef}
       className="fixed inset-0 z-[9999] flex flex-col items-center justify-center gap-4"
-      style={{
-        background: "#000000",
-      }}
+    style={{
+   backgroundColor:"black"
+}}
     >
 
       <div className="flex flex-col items-center leading-tight select-none gap-1">
