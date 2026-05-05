@@ -9,7 +9,7 @@ const Intro = () => {
   const overlayRef = useRef<HTMLDivElement>(null);
   const logoRef = useRef<HTMLImageElement>(null);
   const welcomeRef = useRef<HTMLSpanElement>(null);
-  const nameRef = useRef<HTMLSpanElement>(null);
+  
   const line1Ref = useRef<HTMLDivElement>(null);
   const line2Ref = useRef<HTMLDivElement>(null);
   const dotsRef = useRef<HTMLDivElement>(null);
@@ -45,12 +45,7 @@ const Intro = () => {
         "-=0.3",
       )
 
-      .fromTo(
-        nameRef.current,
-        { x: 80, opacity: 0, skewX: 10 },
-        { x: 0, opacity: 1, skewX: 0, duration: 0.7, ease: "back.out(1.7)" },
-        "-=0.2",
-      )
+  
 
       .to(
         [line1Ref.current, line2Ref.current],
@@ -74,11 +69,7 @@ const Intro = () => {
         { y: -400, opacity: 0, duration: 0.35, ease: "power2.in" },
         "<",
       )
-      .to(
-        nameRef.current,
-        { y: 400, opacity: 0, duration: 0.35, ease: "power2.in" },
-        "<",
-      )
+   
       .to(
         [line1Ref.current, line2Ref.current, dotsRef.current],
         { opacity: 0, duration: 0.2 },
@@ -111,35 +102,26 @@ const Intro = () => {
         background: "#000000",
       }}
     >
-      <Image
-        ref={logoRef}
-        width={120}
-        height={120}
-        src={icon}
-        alt="logo"
-        className="rounded-full ring-2 ring-[#C9A84C]/30 shadow-[0_0_40px_rgba(201,168,76,0.15)]"
-        style={{ opacity: 0 }}
-      />
 
       <div className="flex flex-col items-center leading-tight select-none gap-1">
         <span
           ref={welcomeRef}
-          className="text-white/50 text-xs font-light uppercase tracking-[0.15em]"
+          className="text-white/50 text-md font-light uppercase tracking-[0.15em]"
           style={{ opacity: 0 }}
         >
           Welcome to
         </span>
 
-        <span
-          ref={nameRef}
-          className="text-5xl font-bold tracking-wide"
-          style={{
-            opacity: 0,
-            color: "gold",
-          }}
-        >
-          MARINA
-        </span>
+      <Image
+        ref={logoRef}
+        width={180}
+        height={180}
+        src={icon}
+        alt="logo"
+        className="rounded-full mt-5 ring-2 ring-[#C9A84C]/30 shadow-[0_0_40px_rgba(201,168,76,0.15)]"
+        style={{ opacity: 0 }}
+      />
+ 
 
         <div className="flex items-center gap-2 mt-2 w-48">
           <div

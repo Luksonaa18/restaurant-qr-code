@@ -9,6 +9,7 @@ import { useParams } from "next/navigation";
 import { useTranslation } from "@/app/translator";
 import { ItemKey } from "@/app/locales/translations";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const CategoryPage = () => {
   const params = useParams();
@@ -17,18 +18,20 @@ const CategoryPage = () => {
 
   const category = menu.find((c) => c.id === params.id);
 
-  if (!category)
+  if (!category) {
     return (
       <div className="min-h-screen bg-black flex items-center justify-center text-white tracking-widest">
         Not found
       </div>
     );
+  }
 
   return (
     <div className="min-h-screen bg-black">
       <Header />
 
-      <div className="p-4 space-y-3">
+      {/* GRID WRAPPER */}
+      <div className="p-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
         {category.items.map((item, index) => (
           <motion.div
             key={item.id}
@@ -37,24 +40,35 @@ const CategoryPage = () => {
             transition={{ duration: 0.25, delay: index * 0.05 }}
             whileHover={{ scale: 1.01 }}
             whileTap={{ scale: 0.98 }}
-            className="bg-black border border-[#C9A84C]/20 hover:border-[#C9A84C]/50 transition-colors rounded-2xl shadow-[0_2px_12px_rgba(0,0,0,0.4)] p-3 flex gap-4 items-center"
+            className="bg-black border border-[#C9A84C]/20 hover:border-[#C9A84C]/50 transition-colors rounded-2xl shadow-[0_2px_12px_rgba(0,0,0,0.4)] p-3 flex flex-col gap-3"
           >
-            <div className="w-24 h-24 bg-[#120C06] border border-white rounded-xl shrink-0" />
+            {/* IMAGE */}
+            <Image
+              src={item.image || "/placeholder.png"}
+              width={400}
+              height={250}
+              alt={item.id}
+              className="rounded-lg w-full h-[160px] object-cover"
+            />
 
-            <div className="flex-1 min-w-0">
+            {/* TEXT CONTENT */}
+            <div className="flex flex-col gap-1">
               <h2 className="font-semibold text-base text-white tracking-wide">
                 {tItem(item.id as ItemKey)}
               </h2>
 
               {item.descriptionKey && (
-                <p className="text-sm text-white/50 line-clamp-2 mt-0.5">
+                <p className="text-sm text-white/50 line-clamp-3">
                   {item.descriptionKey}
                 </p>
               )}
 
-              <p className="mt-1 font-semibold text-white/80">{item.price}₾</p>
+              <p className="mt-1 font-semibold text-white/80">
+                {item.price}₾
+              </p>
             </div>
 
+            {/* BUTTON */}
             <motion.button
               whileTap={{ scale: 0.9 }}
               onClick={() =>
@@ -64,7 +78,7 @@ const CategoryPage = () => {
                   price: item.price,
                 })
               }
-              className="flex-shrink-0 bg-gradient-to-b text-white border border-white bg-black text-sm  font-bold px-4 py-2 rounded-xl  tracking-wider hover:brightness-110 transition-all"
+              className="w-full bg-black border border-white text-white text-2xl font-bold py-2 rounded-xl tracking-wider hover:brightness-110 transition-all"
             >
               +
             </motion.button>
