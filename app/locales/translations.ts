@@ -583,14 +583,14 @@ export const translations: Record<Lang, TranslationSchema> = {
       corona: "კორონა",
       "draft-beer": "ჩამოსასხმელი ლუდი",
 
-      "chicken-soup": "ქათმის სუპი",
+      "chicken-soup": "ქათმის წვნიანი",
       "mushroom-cream": "სოკოს კრემსუპი",
-      "mushroom-soup": "სოკოს სუპი",
+      "mushroom-soup": "სოკოს წვნიანი",
       kharcho: "ხარჩო",
-      "lentil-soup": "ოსპის სუპი",
+      "lentil-soup": "ოსპის წვნიანი",
       ishkembe: "იშკემბე",
       chorba: "ჩორბა",
-      "yogurt-soup": "მაწვნის სუპი",
+      "yogurt-soup": "მაწვნის წვნიანი",
       "red-bean": "წითელი ლობიო",
       atom: "ატომი",
 
