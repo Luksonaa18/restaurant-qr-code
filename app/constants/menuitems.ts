@@ -51,7 +51,7 @@ export const menu: Category[] = [
       {
         id: "Berni",
         nameKey: "Soft სასმელი",
-        image: "/hek.jpg",
+        image: "/ბერ.png",
         price: 7,
       },
       {
