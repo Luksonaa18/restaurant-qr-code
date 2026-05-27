@@ -5,7 +5,7 @@ export type CategoryKey =
   | "alcohol"
   | "soups"
   | "salads"
-  | "asorts"
+  | "cold-meals"
   | "meat"
   | "snacks"
   | "pastry";
@@ -131,7 +131,7 @@ export const translations: Record<Lang, TranslationSchema> = {
       alcohol: "Alcoholic Drinks",
       soups: "Soups",
       salads: "Salads",
-      asorts: "Assorted Plates",
+      "cold-meals": "Assorted Plates",
       meat: "Meat Dishes",
       snacks: "Snacks",
       pastry: "Pastry & Pasta",
@@ -266,7 +266,7 @@ export const translations: Record<Lang, TranslationSchema> = {
       alcohol: "Алкоголь",
       soups: "Супы",
       salads: "Салаты",
-      asorts: "Ассорти",
+      "cold-meals": "Ассорти",
       meat: "Мясные блюда",
       snacks: "Закуски",
       pastry: "Тесто и паста",
@@ -401,7 +401,7 @@ export const translations: Record<Lang, TranslationSchema> = {
       alcohol: "Alkollü İçecekler",
       soups: "Çorbalar",
       salads: "Salatalar",
-      asorts: "Karışık Tabaklar",
+      "cold-meals": "Karışık Tabaklar",
       meat: "Et Yemekleri",
       snacks: "Atıştırmalıklar",
       pastry: "Hamur & Makarna",
@@ -536,7 +536,7 @@ export const translations: Record<Lang, TranslationSchema> = {
       alcohol: "ალკოჰოლური სასმელები",
       soups: "წვნიანები",
       salads: "სალათები",
-      asorts: "ასორტი",
+      "cold-meals": "ცივი კერძები",
       meat: "ხორცეული",
       snacks: "სნექები",
       pastry: "ცომეული",
@@ -618,7 +618,7 @@ export const translations: Record<Lang, TranslationSchema> = {
       "smoked-lamb": "ხბოს ჩაშუშული",
       "family-lamb": "ხბოს ოჯახური",
       salkhino: "სალხინო",
-      "chabaka-chick": "ჭაბაკა წიწილა",
+      "chabaka-chick": "ტაბაკა წიწილა",
       "madam-bouvar": "მადამ ბოვარი",
       steak: "სტეიკი",
       "beef-steak": "საქონლის სტეიკი",

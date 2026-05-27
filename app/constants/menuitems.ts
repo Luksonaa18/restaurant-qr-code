@@ -322,7 +322,7 @@ export const menu: Category[] = [
       {
         id: "Kindzmarauli-Draft",
         nameKey: "kindzmarauli",
-        descriptionKey: "ალკოჰოლური სასმელი 20/60",
+        descriptionKey: "ალკოჰოლური სასმელი 20/75",
         price: 20,
         image: "/ქინძი.png",
       },
@@ -848,13 +848,6 @@ export const menu: Category[] = [
         image: "/kharchos-recepti.webp",
       },
       {
-        id: "lentil-soup",
-        nameKey: "ოსპის სუპი",
-        descriptionKey: "თურქული სუპი",
-        price: 15,
-        image: "/ოსპი.jpg",
-      },
-      {
         id: "chorba",
         nameKey: "ჩორბა",
         descriptionKey: "თურქული სუპი",
@@ -868,12 +861,33 @@ export const menu: Category[] = [
         price: 10,
         image: "/matsvnis-supi.jpg",
       },
+
       {
-        id: "atom",
-        nameKey: "ატომი",
+        id: "akroshka",
+        nameKey: "აკროშკა",
+        price: 14,
+        image: "/აკ.jpg",
+      },
+      {
+        id: "chixirtma",
+        nameKey: "ჩიხირთმა",
         descriptionKey: "მსუბუქი სუპი",
-        price: 15,
-        image: "/atom.webp",
+        price: 18,
+        image: "/ჩიხ.webp",
+      },
+      {
+        id: "xashlama",
+        nameKey: "ხაშლამა",
+        descriptionKey: "წვნიანი",
+        price: 21,
+        image: "/ხაშლამა.jpg",
+      },
+      {
+        id: "uxa",
+        nameKey: "უხა",
+        descriptionKey: "წვნიანი",
+        price: 16,
+        image: "/უხა.webp",
       },
     ],
     image: "/soup.jpg",
@@ -889,6 +903,41 @@ export const menu: Category[] = [
         descriptionKey: "თურქული სალათა",
         price: 15,
         image: "/chobam.jpg",
+      },
+      {
+        id: "cucumber-tomato",
+        nameKey: "კიტრი პომიდვრის სალათა",
+        descriptionKey: "სალათა",
+        price: 13,
+        image: "/chobam.jpg",
+      },
+      {
+        id: "cucumber-tomato with wallnuts",
+        nameKey: "კიტრი პომიდვრის სალათა ნიგვზით",
+        descriptionKey: "სალათა",
+        price: 18,
+        image: "/chobam.jpg",
+      },
+      {
+        id: "green-salad",
+        nameKey: "მწვანე სალათა",
+        descriptionKey: "სალათა",
+        price: 15,
+        image: "/მწ.webp",
+      },
+      {
+        id: "kasik salata",
+        nameKey: "კაში   სალათა",
+        descriptionKey: "სალათა",
+        price: 15,
+        image: "/მწ.webp",
+      },
+      {
+        id: "roka salata",
+        nameKey: "როკა სალათა",
+        descriptionKey: "სალათა",
+        price: 15,
+        image: "/მწ.webp",
       },
       {
         id: "zetisxili",
@@ -930,8 +979,8 @@ export const menu: Category[] = [
   },
 
   {
-    id: "asorts",
-    nameKey: "ასორტი",
+    id: "cold-meals",
+    nameKey: "ცივი კერძები",
     items: [
       {
         id: "cheese-asort",
@@ -952,12 +1001,7 @@ export const menu: Category[] = [
         image: "/unnamed (2).jpg",
       },
       { id: "kisir", nameKey: "კისირი", price: 15, image: "/kisir.jpg" },
-      {
-        id: "fruit-asort",
-        nameKey: "ხილის ასორტი",
-        price: 15,
-        image: "/asort.jpg",
-      },
+
       {
         id: "wawtermelon-melon",
         nameKey: "საზამთრო ნესვი",
@@ -1005,29 +1049,42 @@ export const menu: Category[] = [
         image: "/liver.jpg",
       },
       {
-        id: "Barabulka",
-        nameKey: "Barabulka",
-        price: 35,
-        image: "/bar.webp",
-      },
-      {
-        id: "kalmaxi",
-        nameKey: "კალმახი",
-        price: 25,
-        image: "/kiki.jpg",
-      },
-      {
-        id: "Cooked Kalmaxi",
-        nameKey: "კალმახი",
-        price: 25,
-        image: "/sewva.jpg",
-      },
-      {
-        id: "Dorado",
-        nameKey: "დორადო",
+        id: "chkmeruli",
+        nameKey: "ჩქმერული",
         price: 48,
-        image: "/download (1).jpeg",
+        image: "/32.png",
       },
+      {
+        id: "kagit kebab",
+        nameKey: "ქაღალდის ქაბაბი",
+        price: 30,
+        image: "/likas.jpg",
+      },
+      {
+        id: "kazbasi kebab",
+        nameKey: "ბატის თავის ქაბაბი",
+        price: 40,
+        image: "/kaz.jpeg",
+      },
+      {
+        id: "sac kavurma",
+        nameKey: "საკ შეწვა",
+        price: 35,
+        image: "/sac.webp",
+      },
+      {
+        id: "tepsi kebab",
+        nameKey: "უჯრა ქაბაბი",
+        price: 30,
+        image: "/kasd.jpeg",
+      },
+      {
+        id: "sarma beyti",
+        nameKey: "სარმას კუპლეტი",
+        price: 35,
+        image: "/sarma.jpeg",
+      },
+      
       {
         id: "lamb-bbq",
         nameKey: "ცხვრის მწვადი",
@@ -1074,10 +1131,10 @@ export const menu: Category[] = [
         id: "salkhino",
         nameKey: "სალხინო",
         price: 42,
-        image: "",
+        image: "/სალ.jpeg",
       },
       {
-        id: "chabaka-chick",
+        id: "tabaka-chick",
         nameKey: "ტაბაკა წიწილა",
         price: 27,
         image: "/chabaka.webp",
@@ -1095,15 +1152,21 @@ export const menu: Category[] = [
         image: "/steak.jpg",
       },
       {
-        id: "beef-steak",
+        id: "lokum",
         nameKey: "საქონლის სტეიკი",
-        price: 115,
-        image: "/Beef-Steaf.webp",
+        price: 45,
+        image: "/lokum.jpeg",
+      },
+      {
+        id: "Belen tava",
+        nameKey: "ბელენ ტრეი",
+        price: 40,
+        image: "/belen.jpeg",
       },
       {
         id: "ribs-ajika",
         nameKey: "ნეკნი აჯიკაში",
-        price: 115,
+        price: 80,
         image: "/აჯიკა.webp",
       },
       {
@@ -1115,27 +1178,17 @@ export const menu: Category[] = [
       {
         id: "sausage-desk",
         nameKey: "სოსისების დაფა",
-        price: 20,
+        price: 70,
         image: "/7.jpg",
       },
-      {
-        id: "fish-desk",
-        nameKey: "ზღვის პროდუქტების დაფა",
-        price: 190,
-        image: "/desk-fish.jpg",
-      },
+
       {
         id: "liver-withsauce",
         nameKey: "ღვიძლი საფანის სოუსით",
         price: 20,
         image: "",
       },
-      {
-        id: "raw-beef1",
-        nameKey: "უმი ხორცის ბურთულები",
-        price: 25,
-        image: "/unnamed-file-16.jpg",
-      },
+      
       {
         id: "orshtorvis-plate",
         nameKey: "ორშტორვის თეფში",
@@ -1161,7 +1214,6 @@ export const menu: Category[] = [
         price: 35,
         image: "/kebab.webp",
       },
-      { id: "shrimp", nameKey: "კრევეტი", price: 40, image: "/shrimps.jpg" },
     ],
     image: "/meat.jpg",
   },
@@ -1174,6 +1226,12 @@ export const menu: Category[] = [
         nameKey: "ფრი",
         price: 10,
         image: "/fries.jpg",
+      },
+      {
+        id: "mashed potatoes",
+        nameKey: "პიურე",
+        price: 10,
+        image: "/pou.jpg",
       },
       {
         id: "Salted Peanuts",
@@ -1194,6 +1252,12 @@ export const menu: Category[] = [
         image: "/kartoili.jpg",
       },
       {
+        id: "icli kofte",
+        nameKey: "იჩლი კოფტე",
+        price: 10,
+        image: "/images22.jpeg",
+      },
+      {
         id: "turkish-cheese",
         nameKey: "თურქული ყველი",
         price: 16,
@@ -1211,17 +1275,12 @@ export const menu: Category[] = [
         price: 16,
         image: "/შებოლილი.jpg",
       },
-      {
-        id: "fkhali-asorti",
-        nameKey: "ფხალის ასორტი",
-        price: 28,
-        image: "/ლი.jpg",
-      },
+
       {
         id: "green-bouqet",
         nameKey: "მწვანილის თაიგული",
         price: 15,
-        image: "",
+        image: "/ნწ.jpeg",
       },
       {
         id: "badrijani",
@@ -1274,5 +1333,219 @@ export const menu: Category[] = [
       },
     ],
     image: "/xach.jpg",
+  },
+  {
+    id: "seafood",
+    nameKey: "თევზეულობა",
+    items: [
+      {
+        id: "Barabulka",
+        nameKey: "Barabulka",
+        price: 35,
+        image: "/bar.webp",
+      },
+      {
+        id: "Sibasi",
+        nameKey: "sibasi",
+        price: 48,
+        image: "/sibas.jpg",
+      },
+      {
+        id: "kalmaxi",
+        nameKey: "კალმახი",
+        price: 25,
+        image: "/kiki.jpg",
+      },
+      {
+        id: "Cooked Kalmaxi",
+        nameKey: "კალმახი",
+        price: 25,
+        image: "/sewva.jpg",
+      },
+      {
+        id: "Dorado",
+        nameKey: "დორადო",
+        price: 55,
+        image: "/download (1).jpeg",
+      },
+      {
+        id: "fish-desk",
+        nameKey: "ზღვის პროდუქტების დაფა",
+        price: 190,
+        image: "/desk-fish.jpg",
+      },
+      {
+        id: "shrimp",
+        nameKey: "კრევეტი",
+        price: 40,
+        image: "/sh.jpg",
+      },
+      {
+        id: "kalmari",
+        nameKey: "კალმარი",
+        price: 35,
+        image: "/kalm.jpg",
+      },
+    ],
+    image: "/shrimps.jpg",
+  },
+  {
+    id: "desserts",
+    nameKey: "დესერტები",
+    items: [
+      {
+        id: "fruit-asort",
+        nameKey: "ხილის ასორტი",
+        price: 15,
+        image: "/asort.jpg",
+      },
+      {
+        id: "watermelon-melon",
+        nameKey: "ხილის ასორტი",
+        price: 30,
+        image: "/asort.jpg",
+      },
+      {
+        id: "Kurnefe",
+        nameKey: "კურნეფე",
+        price: 25,
+        image: "/kunefe.jpg",
+      },
+      {
+        id: "ნაყინი",
+        nameKey: "დესერტი",
+        price: 15,
+        image: "/nayini.jpg",
+      },
+      {
+        id: "ხილის ასორტი დიდი",
+        nameKey: "დესერტი",
+        price: 45,
+        image: "/asort.jpg",
+      },
+      {
+        id: "ხილის ასორტი პატარა",
+        nameKey: "დესერტი",
+        price: 25,
+        image: "/asort.jpg",
+      },
+      {
+        id: "Cheese cake",
+        nameKey: "დესერტი",
+        price: 15,
+        image: "/ch.jpeg",
+      },
+      {
+        id: "Tiramisu",
+        nameKey: "tiramisu",
+        price: 15,
+        image: "/tir.jpg",
+      },
+      {
+        id: "Baklava 3pcs",
+        nameKey: "baklava",
+        price: 25,
+        image: "/baki.jpeg",
+      },
+      {
+        id: "Magnolia",
+        nameKey: "magnolia",
+        price: 15,
+        image: "/mag.jpeg",
+      },
+    ],
+    image: "/alpen.jpg",
+  },
+  {
+    id: "meze",
+    nameKey: "აპეტაიზერი",
+    items: [
+      {
+        id: "atom",
+        nameKey: "ატომი",
+        price: 15,
+        image: "/atom.webp",
+      },
+      {
+        id: "cacik",
+        nameKey: "ჯაჯიკი",
+        price: 15,
+        image: "/caca.jpg",
+      },
+      {
+        id: "acili ezme",
+        nameKey: "აჯილი ეზმე",
+        price: 15,
+        image: "/acili.jpg",
+      },
+      {
+        id: "strained yougurt",
+        nameKey: "გაფილტრული იოგურტი",
+        price: 15,
+        image: "/str.jpg",
+      },
+      {
+        id: "aleppo homs",
+        nameKey: "ალეპო ჰომს",
+        price: 15,
+        image: "/allepo.webp",
+      },
+      {
+        id: "hummus with olive oil",
+        nameKey: "ჰუმუსი ზეითუნის ზეთით",
+        price: 15,
+        image: "/hum.jpg",
+      },
+      {
+        id: "hummus with butter",
+        nameKey: "ჰუმუსი კარაქით",
+        price: 20,
+        image: "/humb.jpg",
+      },
+      {
+        id: "alinazik",
+        nameKey: "ალინაზიკი",
+        price: 20,
+        image: "/ali.jpeg",
+      },
+      {
+        id: "thyme salad zaatar",
+        nameKey: "თიმის სალათა",
+        price: 20,
+        image: "/ზატ.jpeg",
+      },
+      {
+        id: "Babagannuc",
+        nameKey: "ბაბაგანუჩი",
+        price: 15,
+        image: "/ბაბა.webp",
+      },
+      {
+        id: "eggplant yogurt",
+        nameKey: "ბადრიჯნის იოგურტი",
+        price: 15,
+        image: "/egg.jpg",
+      },
+      {
+        id: "olive salad",
+        nameKey: "ზეთის ხილის სალათა",
+        price: 15,
+        image: "/oli.jpeg",
+      },
+      {
+        id: "pepper yogurt",
+        nameKey: "წიწაკის იოგურტი",
+        price: 15,
+        image: "/images5.jpeg",
+      },
+      {
+        id: "cig kofte",
+        nameKey: "უმი ხორცის ბურთულები",
+        price: 25,
+        image: "/cig.jpg",
+      },
+    
+    ],
+    image: "/meze.jpeg",
   },
 ];
