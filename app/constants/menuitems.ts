@@ -123,21 +123,21 @@ export const menu: Category[] = [
       {
         id: "strawberry-lemonade",
         nameKey: "მარწყვის ლიმონათი",
-        descriptionKey: "სახლის ლიმონათი მარწყვით და ლიმონით",
+        descriptionKey: "სახლის ლიმონათი მარწყვით და ლიმონით 11/25",
         image: "/ma.webp",
         price: 11,
       },
       {
         id: "watermelon-lemonade",
         nameKey: "საზამთროს ლიმონათი",
-        descriptionKey: "ახალი საზამთროს ლიმონათი",
+        descriptionKey: "ახალი საზამთროს ლიმონათი 11/25",
         image: "/wat.jpg",
         price: 11,
       },
       {
         id: "mint-lemonade",
         nameKey: "პიტნის ლიმონათი",
-        descriptionKey: "გამაგრილებელი ლიმონათი პიტნით და ლიმონით",
+        descriptionKey: "გამაგრილებელი ლიმონათი პიტნით და ლიმონით 11/25",
         image: "/mint.jpg",
         price: 11,
       },
@@ -550,13 +550,6 @@ export const menu: Category[] = [
         descriptionKey: " ალკოჰოლური სასმელი",
         price: 25,
         image: "/cosmo.webp",
-      },
-      {
-        id: "Hatai Signature",
-        nameKey: "Hatai",
-        descriptionKey: " ალკოჰოლური სასმელი 15/30",
-        price: 15,
-        image: "",
       },
       {
         id: "Negroni",
@@ -983,6 +976,24 @@ export const menu: Category[] = [
     nameKey: "ცივი კერძები",
     items: [
       {
+        id: "turkish-cheese",
+        nameKey: "თურქული ყველი",
+        price: 16,
+        image: "/turkche.jpg",
+      },
+      {
+        id: "georgian-cheese",
+        nameKey: "სულგუნი ყველი",
+        price: 16,
+        image: "/სულგუნი.jpg",
+      },
+      {
+        id: "smoked-cheese",
+        nameKey: "შებოლილი ყველი",
+        price: 16,
+        image: "/შებოლილი.jpg",
+      },
+      {
         id: "cheese-asort",
         nameKey: "ყველის ასორტი",
         price: 22,
@@ -1019,20 +1030,6 @@ export const menu: Category[] = [
         nameKey: "ევროპული ყველის ასორტი",
         price: 45,
         image: "/yvel.webp",
-      },
-
-      {
-        id: "Alpen Gold",
-        nameKey: "შოკოლადი",
-        price: 12,
-        image: "/alpen.jpg",
-      },
-
-      {
-        id: "Roshen",
-        nameKey: "შოკოლადი",
-        price: 15,
-        image: "/rosh.webp",
       },
     ],
     image: "/assorts.avif",
@@ -1128,12 +1125,6 @@ export const menu: Category[] = [
         image: "/ხბოჯახური.png",
       },
       {
-        id: "salkhino",
-        nameKey: "სალხინო",
-        price: 42,
-        image: "/სალ.jpeg",
-      },
-      {
         id: "tabaka-chick",
         nameKey: "ტაბაკა წიწილა",
         price: 27,
@@ -1150,12 +1141,6 @@ export const menu: Category[] = [
         nameKey: "სტეიკი სოკოს სოუსით",
         price: 35,
         image: "/steak.jpg",
-      },
-      {
-        id: "lokum",
-        nameKey: "საქონლის სტეიკი",
-        price: 45,
-        image: "/lokum.jpeg",
       },
       {
         id: "Belen tava",
@@ -1186,15 +1171,10 @@ export const menu: Category[] = [
         id: "liver-withsauce",
         nameKey: "ღვიძლი საფანის სოუსით",
         price: 20,
-        image: "",
+        image: "/bjih.jpg",
       },
       
-      {
-        id: "orshtorvis-plate",
-        nameKey: "ორშტორვის თეფში",
-        price: 25,
-        image: "/images (1).jpeg",
-      },
+     
       {
         id: "kiev-coutlet",
         nameKey: "კიევური კატლეტი ფრით ან პიურით",
@@ -1234,18 +1214,6 @@ export const menu: Category[] = [
         image: "/pou.jpg",
       },
       {
-        id: "Salted Peanuts",
-        nameKey: "peanuts",
-        price: 10,
-        image: "/txt.webp",
-      },
-      {
-        id: "Chips",
-        nameKey: "chips",
-        price: 10,
-        image: "/cips.jpg",
-      },
-      {
         id: "mexican",
         nameKey: "მექსიკური კარტოფილი",
         price: 15,
@@ -1257,24 +1225,7 @@ export const menu: Category[] = [
         price: 10,
         image: "/images22.jpeg",
       },
-      {
-        id: "turkish-cheese",
-        nameKey: "თურქული ყველი",
-        price: 16,
-        image: "/turkche.jpg",
-      },
-      {
-        id: "georgian-cheese",
-        nameKey: "სულგუნი ყველი",
-        price: 16,
-        image: "/სულგუნი.jpg",
-      },
-      {
-        id: "smoked-cheese",
-        nameKey: "შებოლილი ყველი",
-        price: 16,
-        image: "/შებოლილი.jpg",
-      },
+      
 
       {
         id: "green-bouqet",
@@ -1460,6 +1411,12 @@ export const menu: Category[] = [
     id: "meze",
     nameKey: "აპეტაიზერი",
     items: [
+       {
+        id: "orshtorvis-plate",
+        nameKey: "ორშტორვის თეფში",
+        price: 25,
+        image: "/images (1).jpeg",
+      },
       {
         id: "atom",
         nameKey: "ატომი",
