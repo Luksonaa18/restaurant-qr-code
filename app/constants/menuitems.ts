@@ -631,7 +631,7 @@ export const menu: Category[] = [
         image: "/baba.jpg",
       },
       {
-        id: "Buoweiser 0.33l",
+        id: "Boudvaizer 0.33l",
         nameKey: "bouldwaizer",
         descriptionKey: "ალკოჰოლური სასმელი",
         price: 12,
