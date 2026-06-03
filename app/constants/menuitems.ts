@@ -1032,13 +1032,11 @@ export const menu: Category[] = [
         price: 28,
         image: "/unnamed (2).jpg",
       },
-      { id: "kisir", nameKey: "კისირი", price: 15, image: "/kisir.jpg" },
-
       {
-        id: "wawtermelon-melon",
-        nameKey: "საზამთრო ნესვი",
-        price: 35,
-        image: "/melon.jpg",
+        id: "kisir",
+        nameKey: "კისირი",
+        price: 15,
+        image: "/kisir.jpg",
       },
       {
         id: "carrot-yogurt",
@@ -1104,7 +1102,7 @@ export const menu: Category[] = [
       },
 
       {
-        id: "lamb-bbq",
+        id: "lamb-ribs",
         nameKey: "ხბოს ნეკნი",
         price: 40,
         image: "/lamb.jpg",
@@ -1212,7 +1210,8 @@ export const menu: Category[] = [
         nameKey: "შერეული გრილი",
         descriptionKey: "ქათამი + ხბო + ქაბაბი",
         price: 80,
-        image: "/assorted-mix-grills-with-chicken-tikka-beef-kabab-mutton-kebab-wings-boti-malai-chop-shish-tawook-served-dish-isolated-background-top-view-arabic-food_689047-4724.avif",
+        image:
+          "/assorted-mix-grills-with-chicken-tikka-beef-kabab-mutton-kebab-wings-boti-malai-chop-shish-tawook-served-dish-isolated-background-top-view-arabic-food_689047-4724.avif",
       },
       {
         id: "kebab-pan",
