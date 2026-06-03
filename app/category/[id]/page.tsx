@@ -78,7 +78,7 @@ if (!category || !category.items) {
                 addToCart({
                   id: item.id,
                   nameKey: item.id,
-                  price: item.price,
+                  price: item.price ?? 0,
                 })
               }
               className="w-full bg-black border border-white text-white text-2xl font-bold py-2 rounded-xl tracking-wider hover:brightness-110 transition-all"
