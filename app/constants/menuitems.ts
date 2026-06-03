@@ -1446,7 +1446,7 @@ export const menu: Category[] = [
         image: "/mag.jpeg",
       },
     ],
-    image: "/alpen.jpg",
+    image: "/kunefe.jpg",
   },
   {
     id: "meze",
