@@ -788,7 +788,7 @@ export const menu: Category[] = [
         nameKey: "ჩამოსასხმელი ლუდი",
         descriptionKey: "ლუდი",
         price: 15,
-        image: "/heineken.avif",
+        image: "/chamoasxi.jpg",
       },
       {
         id: "Erdinger",
@@ -796,13 +796,6 @@ export const menu: Category[] = [
         descriptionKey: "ლუდი",
         price: 15,
         image: "/erd.webp",
-      },
-      {
-        id: "corona",
-        nameKey: "კორონა",
-        descriptionKey: "ლუდი",
-        price: 15,
-        image: "/corona.png",
       },
     ],
     image: "/alcohol.png",
@@ -895,24 +888,24 @@ export const menu: Category[] = [
         nameKey: "ჩობან სალათა",
         descriptionKey: "თურქული სალათა",
         price: 15,
-        image: "/chobam.jpg",
+        image: "/choban.jpg",
       },
       {
-        id: "cucumber-tomato",
+        id: "კიტრი პომიდვრის სალათა",
         nameKey: "კიტრი პომიდვრის სალათა",
         descriptionKey: "სალათა",
-        price: 13,
-        image: "/chobam.jpg",
+        image: "/კი.jpeg",
       },
+
       {
-        id: "cucumber-tomato with wallnuts",
+        id: "კიტრი პომიდვრის სალათა ნიგვზით",
         nameKey: "კიტრი პომიდვრის სალათა ნიგვზით",
         descriptionKey: "სალათა",
         price: 18,
-        image: "/chobam.jpg",
+        image: "/ნიგ.jpg",
       },
       {
-        id: "green-salad",
+        id: "მწვანე სალათა",
         nameKey: "მწვანე სალათა",
         descriptionKey: "სალათა",
         price: 15,
@@ -920,17 +913,10 @@ export const menu: Category[] = [
       },
       {
         id: "kasik salata",
-        nameKey: "კაში   სალათა",
+        nameKey: "კაში სალათა",
         descriptionKey: "სალათა",
         price: 15,
-        image: "/მწ.webp",
-      },
-      {
-        id: "roka salata",
-        nameKey: "როკა სალათა",
-        descriptionKey: "სალათა",
-        price: 15,
-        image: "/მწ.webp",
+        image: "/2006.webp",
       },
       {
         id: "zetisxili",
@@ -975,6 +961,18 @@ export const menu: Category[] = [
     id: "cold-meals",
     nameKey: "ცივი კერძები",
     items: [
+      {
+        id: "green-bouqet",
+        nameKey: "მწვანილის თაიგული",
+        price: 15,
+        image: "/ნწ.jpeg",
+      },
+      {
+        id: "badrijani",
+        nameKey: "ბადრიჯანი ნიგვზით",
+        price: 16,
+        image: "/nigvziani-badrijani.jpg",
+      },
       {
         id: "turkish-cheese",
         nameKey: "თურქული ყველი",
@@ -1081,12 +1079,18 @@ export const menu: Category[] = [
         price: 35,
         image: "/sarma.jpeg",
       },
-      
+
       {
         id: "lamb-bbq",
-        nameKey: "ცხვრის მწვადი",
+        nameKey: "ხბოს ნეკნი",
         price: 40,
         image: "/lamb.jpg",
+      },
+      {
+        id: "Sheep-BBQ",
+        nameKey: "ცხვრის მწვადი",
+        price: 40,
+        image: "/393.jpg",
       },
       {
         id: "lamb-ribs",
@@ -1173,8 +1177,7 @@ export const menu: Category[] = [
         price: 20,
         image: "/bjih.jpg",
       },
-      
-     
+
       {
         id: "kiev-coutlet",
         nameKey: "კიევური კატლეტი ფრით ან პიურით",
@@ -1198,20 +1201,20 @@ export const menu: Category[] = [
     image: "/meat.jpg",
   },
   {
-    id: "snacks",
+    id: "garnir",
     nameKey: "სნექები",
     items: [
-      {
-        id: "french-fries",
-        nameKey: "ფრი",
-        price: 10,
-        image: "/fries.jpg",
-      },
       {
         id: "mashed potatoes",
         nameKey: "პიურე",
         price: 10,
         image: "/pou.jpg",
+      },
+      {
+        id: "french-fries",
+        nameKey: "ფრი",
+        price: 15,
+        image: "/fries.jpg",
       },
       {
         id: "mexican",
@@ -1224,20 +1227,6 @@ export const menu: Category[] = [
         nameKey: "იჩლი კოფტე",
         price: 10,
         image: "/images22.jpeg",
-      },
-      
-
-      {
-        id: "green-bouqet",
-        nameKey: "მწვანილის თაიგული",
-        price: 15,
-        image: "/ნწ.jpeg",
-      },
-      {
-        id: "badrijani",
-        nameKey: "ბადრიჯანი ნიგვზით",
-        price: 16,
-        image: "/nigvziani-badrijani.jpg",
       },
     ],
     image: "/fries.jpg",
@@ -1347,14 +1336,14 @@ export const menu: Category[] = [
       {
         id: "fruit-asort",
         nameKey: "ხილის ასორტი",
-        price: 15,
-        image: "/asort.jpg",
+        price: 20,
+        image: "/fara.jpg",
       },
       {
         id: "watermelon-melon",
         nameKey: "ხილის ასორტი",
         price: 30,
-        image: "/asort.jpg",
+        image: "/kala.jpeg",
       },
       {
         id: "Kurnefe",
@@ -1411,7 +1400,7 @@ export const menu: Category[] = [
     id: "meze",
     nameKey: "აპეტაიზერი",
     items: [
-       {
+      {
         id: "orshtorvis-plate",
         nameKey: "ორშტორვის თეფში",
         price: 25,
@@ -1501,8 +1490,13 @@ export const menu: Category[] = [
         price: 25,
         image: "/cig.jpg",
       },
-    
     ],
     image: "/meze.jpeg",
+  },
+  {
+    id: "sefme-kavalte",
+    nameKey: "საუზმე",
+    items: [],
+    image: "/sauzme.webp",
   },
 ];

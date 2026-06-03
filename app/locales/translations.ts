@@ -8,7 +8,9 @@ export type CategoryKey =
   | "cold-meals"
   | "meat"
   | "snacks"
-  | "pastry";
+  | "pastry"
+  | "sefme-kavalte"
+  ;
 export type ItemKey =
   | "raspberry-lemonade"
   | "energy-drink"
@@ -135,6 +137,7 @@ export const translations: Record<Lang, TranslationSchema> = {
       meat: "Meat Dishes",
       snacks: "Snacks",
       pastry: "Pastry & Pasta",
+      "sefme-kavalte": "Sefme Kavalte",
     },
     items: {
       "raspberry-lemonade": "Raspberry Lemonade",
@@ -270,6 +273,7 @@ export const translations: Record<Lang, TranslationSchema> = {
       meat: "Мясные блюда",
       snacks: "Закуски",
       pastry: "Тесто и паста",
+      "sefme-kavalte": "Сефме Кавалте",
     },
     items: {
       "raspberry-lemonade": "Малиновый лимонад",
@@ -405,6 +409,7 @@ export const translations: Record<Lang, TranslationSchema> = {
       meat: "Et Yemekleri",
       snacks: "Atıştırmalıklar",
       pastry: "Hamur & Makarna",
+      "sefme-kavalte": "Sefme Kavalte",
     },
     items: {
       "raspberry-lemonade": "Ahududu Limonata",
@@ -540,6 +545,7 @@ export const translations: Record<Lang, TranslationSchema> = {
       meat: "ხორცეული",
       snacks: "სნექები",
       pastry: "ცომეული",
+      "sefme-kavalte": "სეფმე კავალტე",
     },
     items: {
       "raspberry-lemonade": "მალინის ლიმონათი",
@@ -604,13 +610,13 @@ export const translations: Record<Lang, TranslationSchema> = {
       "pickles-asort": "მჟავეულის ასორტი",
       "phkhali-asort": "ფხალის ასორტი",
       kisir: "კისირი",
-      "fruit-asort": "ხილის ასორტი",
+      "fruit-asort": "ხილის სალათა",
       "wawtermelon-melon": "საზამთრო და ნესვი",
       "carrot-yogurt": "სტაფილო იოგურტით",
       "europe-cheese": "ევროპული ყველი",
 
       "liver-bbq": "ღვიძლის მწვადი",
-      "lamb-bbq": "ცხვრის მწვადი",
+      "lamb-bbq": "ხბოს ნეკნი",
       "lamb-ribs": "ცხვრის ნეკნი",
       "adana-kebab": "ადანა ქაბაბი",
       "chicken-bbq": "ქათმის მწვადი",

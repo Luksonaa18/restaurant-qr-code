@@ -3,7 +3,7 @@ export type MenuItem = {
   nameKey: string;
   descriptionKey?: string;
   image: string;
-  price: number;
+  price?: number;
 };
 export type Category = {
   id: string;
