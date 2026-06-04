@@ -6,10 +6,9 @@ import { Analytics } from "@vercel/analytics/next";
 export default function Home() {
   return (
     <>
-      <Header />
-      <HomePage />
-      <Footer />
-      <Analytics />
+     <div classname="flex h-screen items-center justify-center w-full">
+      <h1 classname="text-red-500 text-2xl font-bold">ERROR ask for help lukazhozhadze53@gmail.com</h1>
+</div>
     </>
   );
 }
